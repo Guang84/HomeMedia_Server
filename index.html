@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guang84 Media Server</title>
+    <link rel="icon" href="./icon/media_icon.png" type="image/x-icon">
+    <style>
+        body {
+            width: 100%;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header .version {
+            font-size: 1em;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .navigation {
+            background: #555;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+        }
+        .navigation ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .navigation ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navigation ul li a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .section ul, .section ol {
+            padding-left: 20px;
+        }
+        .section ul li, .section ol li {
+            margin-bottom: 10px;
+        }
+        pre {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .license-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .license-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Media Server Application</h1>
+        <p class="version">Version: 2024.09.15</p>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About the Project</a></li>
+                <li><a href="#user-guide">User Guide</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="about" class="section">
+            <h2>About the Project</h2>
+            <p>The <strong>Media Server Application</strong> is designed to help families and friends share selected media content without exposing all data to everyone. Developed primarily in response to internet restrictions in Manipur, this project simplifies file sharing within a local network and keeps track of important moments even when offline.</p>
+            <p>By using this media server, you no longer need to repeatedly transfer data from one device to another. Once files are added to the server, they are accessible from any device on the network, making content management effortless.</p>
+        </section>
+
+        <section id="user-guide" class="section">
+            <h2>User Guide</h2>
+            <h3>Getting Started</h3>
+            <ol>
+                <li><strong>Clone the Repository:</strong> Clone the project repository from GitHub using the following command:
+                    <pre><code>git clone https://github.com/Guang84/HomeMedia_Server.git</code></pre>
+                </li>
+                <li><strong>Install Dependencies:</strong> Navigate to the project directory and install the necessary Python packages:
+                    <pre><code>pip install -r requirements.txt</code></pre>
+                </li>
+                <li><strong>Run the Application:</strong> Start the Flask development server with:
+                    <pre><code>python3 app.py</code></pre>
+                    For home network access, use:
+                    <pre><code>open link in server</code></pre>
+                </li>
+            </ol>
+            <h3>Accessing the Application</h3>
+            <p>Open your browser and go to the local IP address assigned to the hosting device (e.g., <code>http://192.168.1.10:5000/</code>) to access the media server from any device on your home network.</p>
+        </section>
+
+        <section id="features" class="section">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Media Sharing:</strong> Seamless sharing of videos, images, and files across devices on the same network.</li>
+                <li><strong>No User Authentication:</strong> Simple and secure access without the need for user accounts.</li>
+                <li><strong>Dynamic Pagination:</strong> Browse through large directories effortlessly.</li>
+                <li><strong>Download Support:</strong> Download media files or entire folders as ZIP archives.</li>
+                <li><strong>Offline-Friendly:</strong> Operates smoothly without internet access.</li>
+                <li><strong>Responsive Design:</strong> Compatible with desktops, tablets, and smartphones.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>For questions, feedback, or contributions, please reach out via email or visit the GitHub repository:</p>
+            <ul>
+                <li>Email: <a href="mailto:guangthuanlunggondaimeinss@gmail.com">guangthuanlunggondaimeinss@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Guang84" target="_blank">Guang84</a></li>
+            </ul>
+            <a href="https://github.com/Guang84/HomeMedia_Server/blob/main/LICENSE" class="license-link">View License</a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Guang84.</p>
+    </footer>
+</body>
+</html>
